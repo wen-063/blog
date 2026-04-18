@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <title>新建文章</title>
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 600px; margin: 50px auto; padding: 20px; }
+    input, textarea, button { display: block; width: 100%; margin: 10px 0; padding: 8px; box-sizing: border-box; }
+    textarea { height: 200px; }
+    button { background: #eee; border: 1px solid #aaa; cursor: pointer; }
+    a { color: #06c; text-decoration: none; }
+  </style>
+</head>
+<body>
+  <h1>新建文章</h1>
+  <form method="post">
+    <input type="text" name="title" placeholder="标题" required>
+    <textarea name="content" placeholder="内容" required></textarea>
+    <button type="submit">发布</button>
+  </form>
+  <p><a href="{{ url_for('home') }}">返回首页</a></p>
+</body>
+</html>

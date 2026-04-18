@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <title>注册</title>
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 400px; margin: 50px auto; padding: 20px; }
+    input, button { display: block; width: 100%; margin: 10px 0; padding: 8px; box-sizing: border-box; }
+    button { background: #eee; border: 1px solid #aaa; cursor: pointer; }
+    a { color: #06c; text-decoration: none; }
+  </style>
+</head>
+<body>
+  <h1>注册</h1>
+  <form method="post">
+    <input type="text" name="username" placeholder="用户名" required>
+    <input type="email" name="email" placeholder="邮箱" required>
+    <input type="password" name="password" placeholder="密码" required>
+    <button type="submit">注册</button>
+  </form>
+  <p><a href="{{ url_for('login') }}">已有账号？登录</a></p>
+</body>
+</html>
